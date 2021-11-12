@@ -1,7 +1,4 @@
-# Bank Account
 
-Welcome to Bank Account on Exercism's Go Track.
-If you need help running the tests or submitting your code, check out `HELP.md`.
 
 ## Instructions
 
@@ -18,18 +15,7 @@ Create an account that can be accessed from multiple threads/processes
 It should be possible to close an account; operations against a closed
 account must fail.
 
-## Instructions
 
-Run the test file, and fix each of the errors in turn. When you get the
-first test to pass, go to the first pending or skipped test, and make
-that pass as well. When all of the tests are passing, feel free to
-submit.
-
-Remember that passing code is just the first step. The goal is to work
-towards a solution that is as readable and expressive as you can make
-it.
-
-Have fun!
 
 ## Implementation Notes
 
@@ -44,34 +30,3 @@ to ensure that operations on the Account leave it in a consistent state.
 For example: multiple goroutines may be depositing and withdrawing money
 simultaneously, two withdrawals occurring concurrently should not be able
 to bring the balance into the negative.
-
-If you are new to concurrent operations in Go it will be worth looking
-at the sync package, specifically Mutexes:
-
-https://golang.org/pkg/sync/
-https://tour.golang.org/concurrency/9
-https://gobyexample.com/mutexes
-
-## Source
-
-### Created by
-
-- @soniakeys
-
-### Contributed to by
-
-- @alebaffa
-- @bitfield
-- @ekingery
-- @ferhatelmas
-- @hilary
-- @homelinen
-- @JensChrG
-- @juergenhoetzel
-- @kytrinyx
-- @leenipper
-- @parroty
-- @petertseng
-- @robphoenix
-- @sebito91
-- @tleen
